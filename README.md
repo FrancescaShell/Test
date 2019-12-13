@@ -8,15 +8,15 @@ Breathing in particle pollution can be harmful to your health. Some particles ca
 The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
-1. open the ```scripts``` file;
-2. register with an username and a password.
+1. Open the ```scripts``` file;
+2. Register with an username and a password:
 ```
 $ python dbmanager.py -a test -p test  
 The registration had been successful
 ```
 > **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
 If you run the program for the first time, this will create a username and password database, so you can run the main program as follows:
-3. execute the main file by running the program with: 
+3. Execute the main file by running the program with: 
 ```$ python main.py -a username -p password -c city -m pm10```
 
 You will get this kind of result:	
@@ -27,23 +27,20 @@ Successful log-in. Welcome username!
 ```
 > **Note:** in case the user forgets to specify the parameter, the programm runs the default parameter “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
-
-
-
 ### Parameters Guide
-Positional arguments
+Positional arguments:
 
 •	**username**: name of the user to log-in
 
-Optional arguments
+Optional arguments:
 
 •	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
 
-•	**-p**, **--password**: user password to log-in.
+•	**-p**, **--password**: user password to log-in (required).
 
-•	**-c**, **--city**: name of the European city.
+•	**-c**, **--city**: name of the European city (required).
 
-•	**-m**, **--molecule**: symbol of the polluting parameter. 
+•	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default). 
 
 ### Documentation
 
@@ -53,8 +50,8 @@ To join the program, you can choose:
 
 Cities and parameters are stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
-### Create AND Populate Openairq_user.DB
-Before run ```main.py``` you need to register with a username and a password. The sign-in necessity of a database to record all the users' information. You find all the process to create a database inside the ```dbmanager.py```file inside /script directory.
+### Create and Populate Openairq_user.db
+Before running ```main.py``` you need to register with a username and a password. There is sign-in necessity of a database to record all the users' information. You find all the processes needed to create a database inside the ```dbmanager.py```file inside /script directory.
 You need to import and use the library SQLite3. The program will check if the database is already existing. If not you create a new DB called user_database using: 
 ```
 cursor.execute('''CREATE TABLE user_database
@@ -67,7 +64,7 @@ It will create a table with 3 columns (username, password_digest, and salt). NOT
 
 ### Testing 
 
-You can test by yourself running the module ```test_openairquality``` inside the test directory. The function checked is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
+You can test the code by yourself running the module ```test_openairquality``` inside the test directory. The function checked is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
 To run it use from the main folder :
 ```$ python3 -m unittest -v -b tests/test_test_open_airquality.py```
 ```
@@ -77,12 +74,11 @@ $ python3 -m unittest -v -b tests/test_test_open_airquality.py
  test_no_file (tests.test_main.TestCsvCreation) ... ok
  test_valid_file (tests.test_main.TestCsvCreation) ... ok
 ```
-> **NOTE:**
-Inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accept a csv a file different and not accept a file with a different format(jpg)
+> **Note:** inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accept a csv a file different and not accept a file with a different format(jpg)
 
 
-#### Group Components:
-Anna Lagrasta (868543) 30/11/1998 <br/>
-Francesca Griggio (866764) 03/12/1998 <br/>
-Martina Gualandi (869442) 21/05/1998  
+#### This repository has been created by the Group Unicorns :unicorn: :
+Anna Lagrasta (868543) <br/>
+Francesca Griggio (866764) <br/>
+Martina Gualandi (869442)
 
