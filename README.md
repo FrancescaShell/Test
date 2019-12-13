@@ -14,7 +14,7 @@ Successful log-in. Welcome example!
 16.043478260869566
 ```
 
-## Note: 
+### Note: 
 1.	In case the user forgets to specify the parameter, the one of default is “pm10”
 2.	The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest and sys.
 
@@ -41,7 +41,7 @@ Optional arguments
 •	**-m**, **--molecule**: symbol of the polluting parameter. 
 
 ### Documentation
-The source of our documentation is the on-line site Openaq; it provides air composition data updated from time to time by other sites. 
+The source of our documentation is the on-line site Openaq; it provides air composition data updated from time to time by other sites. It queries the [OpenAQ](https://openaq.org) website to fetch the value of some air quality parameter in a world city. 
 
 To join the program, you can choose:
 - a **city**, in the list of European cities
