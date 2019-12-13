@@ -21,7 +21,7 @@ If you run the program for the first time, this will create a username and passw
 
 3. Execute the main file by running the program with: 
 ```
-$ python main.py -a username -p password -c city -m molecule
+$ python main.py username -p password -c city -m molecule
 ```
 
 You will get this kind of result:	
