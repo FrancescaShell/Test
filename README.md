@@ -1,8 +1,9 @@
-# Open Air Quality :deciduous_tree: :partly_sunny:
+# Open Air Quality
+### Monitor pollution levels of major Europen cities :deciduous_tree: :partly_sunny:
 
-In this repository you can find a file named ```main.py``` that queries the [OpenAQ](https://openaq.org) website for air quality measurements within European cities. The values of the polluting molecules are gathered through web-accessible API.
+Breathing in particle pollution can be harmful to your health. Some particles can irritate your eyes, nose, and throat, whereas smaller particles can even get into your lungs. In this repository you can find a file named ```main.py``` that can help you monitoring European city's air pollution levels. Indeed, it queries the [OpenAQ](https://openaq.org) website for air quality measurements within specific European cities. Data of the following polluting molecules are gathered from multiple sources and made web-accessible through the [Open AQ Platform API](https://docs.openaq.org/): bc, co, no2, o3, pm10, pm25, so2.
 
-If you execute the main file by running the program with: 
+Executing the main file by running the program with: 
 ```python main.py -a username -p password -c city -m pm10```
  
 It will give you this kind of result:	
@@ -13,7 +14,7 @@ Successful log-in. Welcome username!
 ```
 
 > **Note:** 
-> - In case the user forgets to specify the parameter, the programm runs the default parameter “pm10”
+> - In case the user forgets to specify the parameter, the programm runs the default parameter “pm10” Coarse dust particles are 2.5 to 10 micrometers in diameter. Sources include crushing or grinding operations and dust stirred up by vehicles on roads.
 > - The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
 
 
@@ -43,7 +44,6 @@ Optional arguments
 •	**-m**, **--molecule**: symbol of the polluting parameter. 
 
 ### Documentation
-The source of our documentation is the on-line site Openaq. It provides air composition data updated from time to time by other sites. It queries the [OpenAQ](https://openaq.org) website to fetch the value of some air quality parameter in a world city. 
 
 To join the program, you can choose:
 - a **city**, in the list of European cities
