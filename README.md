@@ -15,6 +15,7 @@ $ python dbmanager.py -a test -p test
 The registration had been successful
 ```
 > **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
+
 If you run the program for the first time, this will create a username and password database, so you can run the main program as follows:
 3. Execute the main file by running the program with: 
 ```$ python main.py -a username -p password -c city -m pm10```
