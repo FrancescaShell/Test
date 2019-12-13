@@ -12,9 +12,9 @@ Successful log-in. Welcome username!
 16.043478260869566
 ```
 
-> **Note**: 
-1.In case the user forgets to specify the parameter, the programm runs the default parameter “pm10”
-2.The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest and sys.
+> **Note:** 
+  1.In case the user forgets to specify the parameter, the programm runs the default parameter “pm10”
+  2.The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest and sys.
 
 
 ### Get started!
