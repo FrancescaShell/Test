@@ -48,3 +48,35 @@ To join the program, you can choose:
 - a **parameter**, from the set of molecules. 
 
 Cities and parameters are stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
+
+### CREATE AND POPULATE OPENAIRQ_USER.DB
+
+Before run ```main.py``` you need to register with a username and a password.
+The sign-in necessity of a database to record all the users' information.
+You find all the process to create a database inside the ```dbmanager.py```, file inside /script directory.
+
+You need to import and use the library SQLite3. The program will check if the database is already existing. If not you create a new DB called user_database using: 
+```
+cursor.execute('''CREATE TABLE user_database
+                     (username TEXT CHAR(30) NOT NULL, 
+                     password_digest TEXT CHAR(30) NOT NULL,
+                     salt TEST, PRIMARY KEY (username))''')
+```
+ 
+It will create a table with 3 columns (username,password_digest, and salt). NOT NULL and CHAR(30) conditions allow the DB will not register Nan or a maximum of 30 characters.
+
+### TESTING 
+
+You can test by yourself running the module 'test_openairquality' inside the test directory. The function checked is the **list_csv** of the 'openairquality.py' inside pypackage folder.
+To run it use : '$ python3 -m unittest -v -b tests/test_test_open_airquality.py'
+
+```
+$ python3 -m unittest -v -b tests/test_test_open_airquality.py
+ test_empty_file (tests.test_main.TestCsvCreation) ... ok
+ test_invalid_file (tests.test_main.TestCsvCreation) ... ok
+ test_no_file (tests.test_main.TestCsvCreation) ... ok
+ test_valid_file (tests.test_main.TestCsvCreation) ... ok
+```
+
+
+Inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accept a csv a file different and not accept a file with a different format(jpg)
