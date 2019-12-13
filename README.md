@@ -3,20 +3,18 @@
 In this repository you can find a file named ```main.py``` that queries the air quality measurements provided by a web-accessible API in order to get the value of some polluting molecules within European cities.
 
 If you execute the main file by running the program with: 
-
-```python main.py -a example -p example -c example -m example```
-
-It will give you this kind of result:
-	
+```python main.py -a username -p password -c city -m pm10```
+ 
+It will give you this kind of result:	
 ```
-$ python3 main.py -a example -p example -c example -m example
-Successful log-in. Welcome example!
+$ python3 main.py -a username -p password -c city -m pm10
+Successful log-in. Welcome username!
 16.043478260869566
 ```
 
-### Note: 
-1.	In case the user forgets to specify the parameter, the one of default is “pm10”
-2.	The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest and sys.
+> **Note**: 
+1.In case the user forgets to specify the parameter, the programm runs the default parameter “pm10”
+2.The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest and sys.
 
 
 ### Get started!
