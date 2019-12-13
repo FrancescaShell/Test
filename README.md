@@ -26,7 +26,7 @@ $ python main.py -a username -p password -c city -m molecule
 
 You will get this kind of result:	
 ```
-$ python3 main.py -a username -p password -c city -m molecule
+$ python3 main.py username -p password -c city -m molecule
 Successful log-in. Welcome username!
 16.043478260869566
 ```
