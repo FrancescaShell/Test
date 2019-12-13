@@ -4,7 +4,7 @@
 Breathing in particle pollution can be harmful to your health. Some particles can irritate your eyes, nose, and throat, whereas smaller particles can even get into your lungs. In this repository you can find a file named ```main.py``` that can help you monitoring European city's air pollution levels. Indeed, it queries the [OpenAQ](https://openaq.org) website for air quality measurements within specific European cities. Data of the following polluting molecules are gathered from multiple sources and made web-accessible through the [Open AQ Platform API](https://docs.openaq.org/): bc, co, no2, o3, pm10, pm25, so2.
 
 Executing the main file by running the program with: 
-```python main.py -a username -p password -c city -m pm10```
+```$ python main.py -a username -p password -c city -m pm10```
  
 It will give you this kind of result:	
 ```
@@ -13,14 +13,13 @@ Successful log-in. Welcome username!
 16.043478260869566
 ```
 
-> **Note:** 
-> - In case the user forgets to specify the parameter, the programm runs the default parameter “pm10” Coarse dust particles are 2.5 to 10 micrometers in diameter. Sources include crushing or grinding operations and dust stirred up by vehicles on roads.
-> - The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
+> **Note:** in case the user forgets to specify the parameter, the programm runs the default parameter “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
 
 ### Get started!
-Registration is required!
-In order to access information you need to: 
+The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
+Firstly, **registration is required** to access information about the atmosphere!
+In order to register you need to: 
 1. open the ```scripts``` file;
 2. register with an username and a password.
 ```
