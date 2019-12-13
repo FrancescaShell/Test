@@ -29,6 +29,7 @@ The registration had been successful
 
 ### Parameters Guide
 Positional arguments
+
 •	**username**: name of the user to log-in
 
 Optional arguments
