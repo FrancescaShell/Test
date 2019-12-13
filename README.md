@@ -9,7 +9,7 @@ The project requires the following modules: argparse, sqlite3, hashlib, random, 
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
 1. Open the ```scripts``` file;
-2. Register with an username and a password:
+2. Register with username and password:
 ```
 $ python dbmanager.py -a test -p test  
 The registration had been successful
