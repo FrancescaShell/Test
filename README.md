@@ -28,13 +28,18 @@ The registration had been successful
 ```
 
 ## Parameters Guide
-Positional arguments
+Positional arguments:
+
 • **username**: name of the user to log-in
 
-Optional arguments
+Optional arguments:
+
 •	**-v**, **--verbosity**: output verbosity.
+
 •	**-p**, **--password**: user password to log-in.
+
 •	**-c**, **--city**: name of the European city.
+
 •	**-m**, **--molecule**: symbol of the polluting parameter. 
 
 ## Documentation
