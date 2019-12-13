@@ -3,18 +3,6 @@
 
 Breathing in particle pollution can be harmful to your health. Some particles can irritate your eyes, nose, and throat, whereas smaller particles can even get into your lungs. In this repository you can find a file named ```main.py``` that can help you monitoring European city's air pollution levels. Indeed, it queries the [OpenAQ](https://openaq.org) website for air quality measurements within specific European cities. Data of the following polluting molecules are gathered from multiple sources and made web-accessible through the [Open AQ Platform API](https://docs.openaq.org/): bc, co, no2, o3, pm10, pm25, so2.
 
-Executing the main file by running the program with: 
-```$ python main.py -a username -p password -c city -m pm10```
- 
-It will give you this kind of result:	
-```
-$ python3 main.py -a username -p password -c city -m pm10
-Successful log-in. Welcome username!
-16.043478260869566
-```
-
-> **Note:** in case the user forgets to specify the parameter, the programm runs the default parameter “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
-
 
 ### Get started!
 The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
@@ -26,6 +14,21 @@ In order to register you need to:
 $ python dbmanager.py -a test -p test  
 The registration had been successful
 ```
+> **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
+If you run the program for the first time, this will create a username and password database, so you can run the main program as follows:
+3. execute the main file by running the program with: 
+```$ python main.py -a username -p password -c city -m pm10```
+
+You will get this kind of result:	
+```
+$ python3 main.py -a username -p password -c city -m pm10
+Successful log-in. Welcome username!
+16.043478260869566
+```
+> **Note:** in case the user forgets to specify the parameter, the programm runs the default parameter “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
+
+
+
 
 ### Parameters Guide
 Positional arguments
