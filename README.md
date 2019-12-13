@@ -1,4 +1,4 @@
-### Open air quality
+### Open air quality :deciduous_tree: :partly_sunny:
 
 In this repository you can find a file named ```main.py``` that queries the air quality measurements provided by a web-accessible API in order to get the value of some polluting molecules within European cities.
 
@@ -30,15 +30,15 @@ The registration had been successful
 ```
 
 
-### Arg
+### Parameters Guide
 Positional arguments
 *username*: name of the user to log-in
 
 Optional arguments
-•	*-v*, *--verbosity*: output verbosity.
-•	*-p*, *--password*: user password to log-in.
-•	*-c*, *--city*: name of the European city.
-•	*-m*, *--molecule*: symbol of the polluting parameter. 
+•	**-v**, **--verbosity**: output verbosity.
+•	**-p**, **--password**: user password to log-in.
+•	**-c**, **--city**: name of the European city.
+•	**-m**, **--molecule**: symbol of the polluting parameter. 
 
 ### Documentation
 The source of our documentation is the on-line site Openaq; it provides air composition data updated from time to time by other sites. 
