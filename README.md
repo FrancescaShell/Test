@@ -8,15 +8,15 @@ Breathing in particle pollution can be harmful to your health. Some particles ca
 The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
-1. Open the ```scripts``` file;
+1. Open the ```scripts``` folder;
 2. Register with username and password:
 ```
-$ python dbmanager.py -a test -p test  
+$ python dbmanager.py -a username -p password  
 The registration had been successful
 ```
 > **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
 
-If you run the program for the first time, this will create a username and password database, so you can run the main program as follows:
+If you run the program for the first time, this will create a username and password database (read more about database creation and population below). Now you can run the main program as follows:
 
 3. Execute the main file by running the program with: 
 ```
@@ -25,17 +25,17 @@ $ python main.py -a username -p password -c city -m pm10
 
 You will get this kind of result:	
 ```
-$ python3 main.py -a username -p password -c city -m pm10
+$ python3 main.py -a username -p password -c city -m molecule
 Successful log-in. Welcome username!
 16.043478260869566
 ```
-> **Note:** in case the user forgets to specify the parameter, the programm runs the default parameter “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
+> **Note:** in case the user forgets to specify the molecule, the programm runs the default “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
 ### Parameters Guide
-To join the program, you can choose:
+To join the program, after inserting your username and password, you can choose:
 - a **city**, in the list of European cities: conslut [OpenAQ API](https://api.openaq.org/v1/cities) documentation.
-- a **parameter**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.
-Cities and parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
+- a **molecule**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.
+Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
 Positional arguments:
 
@@ -43,18 +43,18 @@ Positional arguments:
 
 Optional arguments:
 
-•	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
-
 •	**-p**, **--password**: user password to log-in (required).
 
 •	**-c**, **--city**: name of the European city (required).
 
-•	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default). 
+•	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default).
+
+•	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
 
 
-### Create and Populate Openairq_user.db
-Before running ```main.py``` you need to register with a username and a password. There is sign-in necessity of a database to record all the users' information. You find all the processes needed to create a database inside the ```dbmanager.py```file inside /script directory.
-You need to import and use the library SQLite3. The program will check if the database is already existing. If not you create a new DB called user_database using: 
+### Create and Populate openairq_user.db
+Before running ```main.py``` you need to register with a username and a password. First time sign-in necessarty for the database to record all the users' information. You can find all the processes needed to create the database inside the ```dbmanager.py```file inside ```scripts``` directory. 
+By importing and using the SQLite3 library, the program checks if the database is already existing, otherwise creates a new one called user_database by using: 
 ```
 cursor.execute('''CREATE TABLE user_database
                      (username TEXT CHAR(30) NOT NULL, 
@@ -62,25 +62,24 @@ cursor.execute('''CREATE TABLE user_database
                      salt TEST, PRIMARY KEY (username))''')
 ```
  
-It will create a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR(30) conditions allow the DB will not register Nan or a maximum of 30 characters.
+This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR(30) conditions ensure that no user will register with Nan or more than 30 characters.
 
 ### Testing 
-
-You can test the code by yourself running the module ```test_openairquality``` inside the test directory. The function checked is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
-To run it use from the main folder :
-```$ python3 -m unittest -v -b tests/test_test_open_airquality.py```
+You can test the code running the module ```test_openairquality``` inside the test directory. The function tested is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
+To run the unittest go to the ```tests``` folder and do:
+```$ python3 -m unittest -v -b test_openairquality.py```
 ```
-$ python3 -m unittest -v -b tests/test_test_open_airquality.py
+$ python3 -m unittest -v -b test_openairquality.py
  test_empty_file (tests.test_main.TestCsvCreation) ... ok
  test_invalid_file (tests.test_main.TestCsvCreation) ... ok
  test_no_file (tests.test_main.TestCsvCreation) ... ok
  test_valid_file (tests.test_main.TestCsvCreation) ... ok
 ```
-> **Note:** inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accept a csv a file different and not accept a file with a different format(jpg)
+> **Note:** inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accepts a csv file and does not accept a file with a different format(jpg).
 
 
 #### This repository has been created by the Group Unicorns :unicorn: :
-Anna Lagrasta (868543) <br/>
-Francesca Griggio (866764) <br/>
-Martina Gualandi (869442)
+868543 - Anna Lagrasta <br/>
+866764 - Francesca Griggio <br/>
+869442 - Martina Gualandi
 
