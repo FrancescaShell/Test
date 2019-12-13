@@ -80,3 +80,11 @@ $ python3 -m unittest -v -b tests/test_test_open_airquality.py
 
 
 Inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accept a csv a file different and not accept a file with a different format(jpg)
+
+
+## Group Components:
+
+Anna Lagrasta (868543) 30/11/1998 <br/>
+Francesca Griggio (866764) 03/12/1998 <br/>
+Martina Gualandi (869442) 21/05/1998 
+
