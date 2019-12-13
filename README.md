@@ -17,8 +17,11 @@ The registration had been successful
 > **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
 
 If you run the program for the first time, this will create a username and password database, so you can run the main program as follows:
+
 3. Execute the main file by running the program with: 
-```$ python main.py -a username -p password -c city -m pm10```
+```
+$ python main.py -a username -p password -c city -m pm10
+```
 
 You will get this kind of result:	
 ```
@@ -29,6 +32,11 @@ Successful log-in. Welcome username!
 > **Note:** in case the user forgets to specify the parameter, the programm runs the default parameter “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
 ### Parameters Guide
+To join the program, you can choose:
+- a **city**, in the list of European cities: conslut [OpenAQ API](https://api.openaq.org/v1/cities) documentation.
+- a **parameter**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.
+Cities and parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
+
 Positional arguments:
 
 •	**username**: name of the user to log-in
@@ -43,13 +51,6 @@ Optional arguments:
 
 •	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default). 
 
-### Documentation
-
-To join the program, you can choose:
-- a **city**, in the list of European cities
-- a **parameter**, from the set of molecules. 
-
-Cities and parameters are stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
 ### Create and Populate Openairq_user.db
 Before running ```main.py``` you need to register with a username and a password. There is sign-in necessity of a database to record all the users' information. You find all the processes needed to create a database inside the ```dbmanager.py```file inside /script directory.
