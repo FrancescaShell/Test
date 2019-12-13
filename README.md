@@ -16,11 +16,12 @@ The registration had been successful
 ```
 > **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
 
+
 If you run the program for the first time, this will create a username and password database (read more about database creation and population below). Now you can run the main program as follows:
 
 3. Execute the main file by running the program with: 
 ```
-$ python main.py -a username -p password -c city -m pm10
+$ python main.py -a username -p password -c city -m molecule
 ```
 
 You will get this kind of result:	
@@ -30,6 +31,7 @@ Successful log-in. Welcome username!
 16.043478260869566
 ```
 > **Note:** in case the user forgets to specify the molecule, the programm runs the default “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
+
 
 ### Parameters Guide
 To join the program, after inserting your username and password, you can choose:
@@ -64,6 +66,7 @@ cursor.execute('''CREATE TABLE user_database
  
 This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR(30) conditions ensure that no user will register with Nan or more than 30 characters.
 
+
 ### Testing 
 You can test the code running the module ```test_openairquality``` inside the test directory. The function tested is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
 To run the unittest go to the ```tests``` folder and do:
@@ -82,4 +85,3 @@ $ python3 -m unittest -v -b test_openairquality.py
 868543 - Anna Lagrasta <br/>
 866764 - Francesca Griggio <br/>
 869442 - Martina Gualandi
-
