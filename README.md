@@ -77,5 +77,5 @@ Inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are u
 #### Group Components:
 Anna Lagrasta (868543) 30/11/1998 <br/>
 Francesca Griggio (866764) 03/12/1998 <br/>
-Martina Gualandi (869442) 21/05/1998 
+Martina Gualandi (869442) 21/05/1998  
 
