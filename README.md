@@ -1,4 +1,4 @@
-### Open air quality :deciduous_tree: :partly_sunny:
+# OPEN AIR QUALITY :deciduous_tree: :partly_sunny:
 
 In this repository you can find a file named ```main.py``` that queries the air quality measurements provided by a web-accessible API in order to get the value of some polluting molecules within European cities.
 
