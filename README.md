@@ -29,12 +29,15 @@ The registration had been successful
 
 ### Parameters Guide
 Positional arguments
-*username*: name of the user to log-in
+  - **username**: name of the user to log-in
 
 Optional arguments
 •	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
+
 •	**-p**, **--password**: user password to log-in.
+
 •	**-c**, **--city**: name of the European city.
+
 •	**-m**, **--molecule**: symbol of the polluting parameter. 
 
 ### Documentation
