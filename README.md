@@ -41,11 +41,19 @@ To join the program, after inserting your username and password, you can choose:
 
 Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
-Positional arguments:
+
+|          POSITIONAL arguments             |                              OPTIONAL arguments                                |
+|:-----------------------------------------:|:------------------------------------------------------------------------------:|
+|  **username**: name of the user to log-in |  **-p**, **--password**: user password to log-in (required)                    |
+|                                           |  **-c**, **--city**: name of the European city (required)                      |                                                   |                                           |  **-m**, **--molecule**: molecule of the polluting parameter (pm10 by default) | 
+|                                           |  **-v**, **--verbosity**: output verbosity (three levels of verbosity admitted)|
+
+
+*POSITIONAL ARGUMENTS*:
 
 •	**username**: name of the user to log-in
 
-Optional arguments:
+*OPTIONAL ARGUMENTS*:
 
 •	**-p**, **--password**: user password to log-in (required).
 
