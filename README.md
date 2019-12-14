@@ -42,26 +42,12 @@ To join the program, after inserting your username and password, you can choose:
 Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
 
-|          POSITIONAL arguments             |                              OPTIONAL arguments                                |
+|          *Positional arguments*           |                              *Optional arguments*                              |
 |:-----------------------------------------:|:------------------------------------------------------------------------------:|
 |  **username**: name of the user to log-in |  **-p**, **--password**: user password to log-in (required)                    |
 |                                           |  **-c**, **--city**: name of the European city (required)                      |                                                   |                                           |  **-m**, **--molecule**: molecule of the polluting parameter (pm10 by default) | 
 |                                           |  **-v**, **--verbosity**: output verbosity (three levels of verbosity admitted)|
 
-
-*POSITIONAL ARGUMENTS*:
-
-•	**username**: name of the user to log-in
-
-*OPTIONAL ARGUMENTS*:
-
-•	**-p**, **--password**: user password to log-in (required).
-
-•	**-c**, **--city**: name of the European city (required).
-
-•	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default).
-
-•	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
 
 
 ### Create and Populate openairq_user.db
@@ -89,6 +75,7 @@ $ python3 -m unittest -v -b test_openairquality.py
  test_valid_file (tests.test_main.TestCsvCreation) ... ok
 ```
 > **Note:** inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accepts a csv file and does not accept a file with a different format(jpg).
+
 
 
 #### This repository has been created by the Group Unicorns :unicorn: :
