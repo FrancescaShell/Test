@@ -35,18 +35,27 @@ Successful log-in. Welcome username!
 
 ### Parameters Guide
 To join the program, after inserting your username and password, you can choose:
-- a **city**, in the list of European cities: try with some European capitals like Roma, Paris, London, Berlin, Luxembourg, Bristol, Cambridge, Edinburgh, Oxford, Amsterdam, Budapest, Brussels, Oslo, Granada, Stockholm.
-  > Conslut [OpenAQ API](https://api.openaq.org/v1/cities) documentation.
+- a **city**, in the list of European cities: conslut [OpenAQ API](https://api.openaq.org/v1/cities) documentation.
+  > Try with some European capitals like Roma, Paris, London, Berlin, Luxembourg, Bristol, Cambridge, Edinburgh, Oxford, Amsterdam, Budapest, Brussels, Oslo, Granada, Stockholm.
 - a **molecule**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.<br/>
 
 Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
+*Positional arguments*:
 
-|          *Positional arguments*           |                              *Optional arguments*                              |
-|:-----------------------------------------:|:------------------------------------------------------------------------------:|
-|  **username**: name of the user to log-in |  **-p**, **--password**: user password to log-in (required)                    |
-|                                           |  **-c**, **--city**: name of the European city (required)                      |                                                   |                                           |  **-m**, **--molecule**: molecule of the polluting parameter (pm10 by default) | 
-|                                           |  **-v**, **--verbosity**: output verbosity (three levels of verbosity admitted)|
+• **username**: name of the user to log-in
+
+*Optional arguments*:
+
+•	**-p**, **--password**: user password to log-in (required).
+
+•	**-c**, **--city**: name of the European city (required).
+
+•	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default).
+
+•	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
+
+
 
 
 
