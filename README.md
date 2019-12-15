@@ -72,8 +72,8 @@ Cities and polluting molecule's parameters have been gathered and stored in ```p
 
 
 ### Create and Populate openaq_user.db
-Before running ```main.py``` you need to register with a username and a password. First time sign-in necessarty for the database to record all the users' information. You can find all the processes needed to create the database inside the ```dbmanager.py```file inside ```scripts``` directory. 
-By importing and using the SQLite3 library, the program checks if the database is already existing, otherwise creates a new one called user_database by using: 
+Before running ```main.py``` you need to register with a username and a password. First time sign-in is necessary for the database to record all the users' information. You can find all the processes needed to create the database inside the ```dbmanager.py```file inside ```scripts``` folder. 
+By importing and using the ```sqlite3``` library, the program checks if the database is already existing, otherwise creates a new one called ```user_database``` by using: 
 ```
 cursor.execute('''CREATE TABLE user_database
                      (username CHAR(30) NOT NULL,
@@ -81,24 +81,23 @@ cursor.execute('''CREATE TABLE user_database
                      salt CHAR(30), PRIMARY KEY (username))'''))
 ```
  
-This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users will not register with Nan value or more characters than allowed.
+This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users does not register with Nan value or more characters than allowed.
 
 *Optional arguments*:
 
 •	**-a**: add a username (password required).
 
-•	**-p**: username password (required).
+•	**-p**: password to be associated with the username (required).
 
-•	**-c**: check for a username(password required).
-
+•	**-c**: check for a username (password required).
 
 
 
 ### Testing 
-You can test the code running the module ```test_openairquality``` inside the test directory. The function tested is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
+You can test the code running the module ```test_openairquality``` inside ```tests``` folder. The function tested is the **list_csv** of the module ```openairquality.py``` inside ```pypackage``` folder.
 To run the unittest go to the ```tests``` folder and do:
 ```
-$ python3 -m unittest -v -b test_openairquality.py
+$ python -m unittest -v -b test_openairquality.py
 ```
 You will obtain this kind of result: 
 ```
@@ -107,7 +106,7 @@ You will obtain this kind of result:
  test_no_file (tests.test_main.TestCsvCreation) ... ok
  test_valid_file (tests.test_main.TestCsvCreation) ... ok
 ```
-> **Note:** inside the folder the two file ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accepts a csv file and does not accept a file with a different format(jpg).
+> **Note:** inside the folder the two files ```eu.csv``` and ```ibelieveinmyself.jpg``` are used in the module ```test_main``` to test that the function accepts a csv file and does not accept a file with a different format (i.e. jpg).
 
 
 
