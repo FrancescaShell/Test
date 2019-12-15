@@ -37,7 +37,7 @@ Successful log-in. Welcome username!
 
 You may want to turn on output verbosity by typing as follows in the example of a user looking for pm10 value in Roma: 
 ```
-$ python main.py  user -p password -c Roma -m pm10 -v 
+$ python main.py user -p password -c Roma -m pm10 -v 
 ``` 
 To get this kind of result:
 ```
