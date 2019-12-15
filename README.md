@@ -20,8 +20,8 @@ Successful log-in. Welcome username!
 ## Get started!
 Registration is required!
 In order to access information you need to: 
-1. open the ```scripts``` file;
-2. register with an username and a password.
+##### 1. open the ```scripts``` file;
+##### 2. register with an username and a password.
 ```
 $ python dbmanager.py -a test -p test  
 The registration had been successful
