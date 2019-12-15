@@ -69,7 +69,7 @@ cursor.execute('''CREATE TABLE user_database
                      salt CHAR(30), PRIMARY KEY (username))'''))
 ```
  
-This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users will not register with Nan or more characters not allowed.
+This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users will not register with Nan value or more characters allowed.
 
 *Optional arguments*:
 
@@ -99,5 +99,5 @@ $ python3 -m unittest -v -b test_openairquality.py
 
 #### This repository has been created by the Group Unicorns :unicorn: :
 868543 - Anna Lagrasta <br/>
-866764 - Francesca Griggio <br/> 
+866764 - Francesca Griggio <br/>
 869442 - Martina Gualandi
