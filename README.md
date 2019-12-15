@@ -5,7 +5,7 @@ Breathing in particle pollution can be harmful to your health. Some particles ca
 
 
 ### Get started!
-The project requires the following modules:```argparse```, ```sqlite3```, ```hashlib```, ```random```, ```requests```, ```json```, ```csv```, ```unittest```, ```os```, and ```sys```.
+The following modules are required:```argparse```, ```sqlite3```, ```hashlib```, ```random```, ```requests```, ```json```, ```csv```, ```unittest```, ```os```, and ```sys```.
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
 1. Go to the ```scripts``` folder;
