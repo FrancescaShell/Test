@@ -33,6 +33,13 @@ Successful log-in. Welcome username!
 > **Note:** in case the user forgets to specify the molecule, the programm runs the default “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
 
+You may want to turn on output verbosity use by typing: ```% python3 main.py  user -p password -c Roma -m pm10 -v ```
+To get this kind of result:
+```Successful log-in. Welcome user!
+First level of verbosity turned on
+pm10 in Roma = 20.91304347826087 
+```
+
 ### Parameters Guide
 To join the program, after inserting your username and password, you can choose:
 - a **city**, in the list of European cities: conslut [OpenAQ API](https://api.openaq.org/v1/cities) documentation. 
@@ -54,8 +61,6 @@ Cities and polluting molecule's parameters have been gathered and stored in ```p
 •	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default).
 
 •	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
-
-
 
 
 
