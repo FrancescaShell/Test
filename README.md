@@ -9,8 +9,7 @@ The following modules are required:```argparse```, ```sqlite3```, ```hashlib```,
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
 
-**1. Go to the ```scripts``` folder
-** .  
+**1. Go to the ```scripts``` folder**.
 **2. Register with username and password:**
 ```
 $ python dbmanager.py -a username -p password  
