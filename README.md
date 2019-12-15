@@ -8,8 +8,9 @@ Breathing in particle pollution can be harmful to your health. Some particles ca
 The following modules are required:```argparse```, ```sqlite3```, ```hashlib```, ```random```, ```requests```, ```json```, ```csv```, ```unittest```, ```os```, and ```sys```.
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
-**1. Go to the ```scripts``` folder; **
-**2. Register with username and password: **
+
+**1. Go to the ```scripts``` folder;**
+**2. Register with username and password:**
 ```
 $ python dbmanager.py -a username -p password  
 ```
@@ -22,7 +23,7 @@ The registration had been successful
 
 If you run the program for the first time, this will create a username and password database (read more about database creation and population below). Now you can run the main program as follows:
 
-**3. Execute the main file by running the program with: **
+**3. Execute the main file by running the program with:**
 ```
 $ python main.py username -p password -c city -m molecule
 ```
