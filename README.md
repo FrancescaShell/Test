@@ -5,7 +5,7 @@ Breathing in particle pollution can be harmful to your health. Some particles ca
 
 
 ### Get started!
-The project requires the following modules:``` argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.```
+The project requires the following modules:```argparse```, ```sqlite3```, ```hashlib```, ```random```, ```requests```, ```json```, ```csv```, ```unittest```, ```os```, and ```sys```.
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
 1. Go to the ```scripts``` folder;
@@ -29,16 +29,15 @@ $ python main.py username -p password -c city -m molecule
 
 You will get this kind of result:	
 ```
-$ python main.py username -p password -c city -m molecule
 Successful log-in. Welcome username!
 16.043478260869566
 ```
 > **Note:** in case the user forgets to specify the molecule, the programm runs the default “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
 
-You may want to turn on output verbosity by typing: 
+You may want to turn on output verbosity by typing as follows in the example of a user looking for pm10 value in Roma: 
 ```
-% python main.py  user -p password -c Roma -m pm10 -v 
+$ python main.py  user -p password -c Roma -m pm10 -v 
 ``` 
 To get this kind of result:
 ```
@@ -51,7 +50,7 @@ pm10 in Roma = 20.91304347826087
 To join the program, after inserting your username and password, you can choose:
 - a **city**, in the list of European cities: conslut [OpenAQ API](https://api.openaq.org/v1/cities) documentation. 
   > Try with some of the most important European cities like Roma, Paris, London, Berlin, Luxembourg, Bristol, Cambridge, Edinburgh, Oxford, Amsterdam, Budapest, Brussels, Oslo, Granada, Stockholm.
-- a **molecule**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.<br/>
+- m **molecule**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.<br/>
 
 Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
@@ -81,7 +80,7 @@ cursor.execute('''CREATE TABLE user_database
                      salt CHAR(30), PRIMARY KEY (username))'''))
 ```
  
-This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users will not register with Nan value or more characters allowed.
+This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users will not register with Nan value or more characters than allowed.
 
 *Optional arguments*:
 
@@ -89,7 +88,7 @@ This creates a table with 3 columns (username, password_digest, and salt). NOT N
 
 •	**-p**: username password (required).
 
-•	**-c**: check for a username and password (password required).
+•	**-c**: check for a username(password required).
 
 
 
