@@ -5,7 +5,7 @@ Breathing in particle pollution can be harmful to your health. Some particles ca
 
 
 ### Get started!
-The project requires the following modules: argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.
+The project requires the following modules:``` argparse, sqlite3, hashlib, random, requests, json, csv, unittest, os, and sys.```
 Firstly, **registration is required** to access information about the atmosphere!
 In order to register you need to: 
 1. Go to the ```scripts``` folder;
@@ -26,7 +26,7 @@ $ python main.py username -p password -c city -m molecule
 
 You will get this kind of result:	
 ```
-$ python3 main.py username -p password -c city -m molecule
+$ python main.py username -p password -c city -m molecule
 Successful log-in. Welcome username!
 16.043478260869566
 ```
