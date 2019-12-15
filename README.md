@@ -1,5 +1,5 @@
 # Open Air Quality
-### Monitor pollution levels of major Europen cities :deciduous_tree: :partly_sunny:
+### Monitor pollution levels of major European cities :deciduous_tree: :partly_sunny:
 
 Breathing in particle pollution can be harmful to your health. Some particles can irritate your eyes, nose, and throat, whereas smaller particles can even get into your lungs. In this repository you can find a file named ```main.py``` that can help you monitoring European city's air pollution levels. Indeed, it queries the [OpenAQ](https://openaq.org) website for air quality measurements within specific European cities. Data of the following polluting molecules are gathered from multiple sources and made web-accessible through the [Open AQ Platform API](https://docs.openaq.org/): bc, co, no2, o3, pm10, pm25, so2.
 
