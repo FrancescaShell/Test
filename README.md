@@ -40,7 +40,7 @@ You may want to turn on output verbosity. The following example shows a user loo
 ```
 $ python main.py user -p password -c Roma -m pm10 -v 
 ``` 
-To get this kind of result:
+Verbosity will generate this kind of result:
 ```
 Successful log-in. Welcome user!
 First level of verbosity turned on
