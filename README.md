@@ -53,7 +53,7 @@ To join the program, after inserting your username and password, you can choose:
   > Try with some of the most important European cities like Roma, Paris, London, Berlin, Luxembourg, Bristol, Cambridge, Edinburgh, Oxford, Amsterdam, Budapest, Brussels, Oslo, Granada, Stockholm.
 - a **molecule**, from the set of molecules: bc, co, no2, o3, pm10, pm25, so2.<br/>
 
-Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as .csv files; respectively in ```cities.csv``` and ```parameters.csv```
+Cities and polluting molecule's parameters have been gathered and stored in ```pypackage``` as csv files; respectively in ```cities.csv``` and ```parameters.csv```
 
 *Positional arguments*:
 
