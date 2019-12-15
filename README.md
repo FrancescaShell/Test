@@ -57,7 +57,7 @@ Cities and polluting molecule's parameters have been gathered and stored in ```p
 
 *Positional arguments*:
 
-• **username**: name of the user to log-in
+• **username**: name of the user to log-in.
 
 *Optional arguments*:
 
@@ -65,13 +65,13 @@ Cities and polluting molecule's parameters have been gathered and stored in ```p
 
 •	**-c**, **--city**: name of the European city (required).
 
-•	**-m**, **--molecule**: molecule of the polluting parameter (pm10 by default).
+•	**-m**, **--molecule**: name of the polluting molecule (pm10 by default).
 
 •	**-v**, **--verbosity**: output verbosity (three levels of verbosity admitted).
 
 
 
-### Create and Populate openairq_user.db
+### Create and Populate openaq_user.db
 Before running ```main.py``` you need to register with a username and a password. First time sign-in necessarty for the database to record all the users' information. You can find all the processes needed to create the database inside the ```dbmanager.py```file inside ```scripts``` directory. 
 By importing and using the SQLite3 library, the program checks if the database is already existing, otherwise creates a new one called user_database by using: 
 ```
