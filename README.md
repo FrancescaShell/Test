@@ -12,6 +12,9 @@ In order to register you need to:
 2. Register with username and password:
 ```
 $ python dbmanager.py -a username -p password  
+```
+The output will confirm the registration:
+```
 The registration had been successful
 ```
 > **Note:** you can add as many users as you want repeating these steps. Remember, you can't add more than one user with the same username.
@@ -94,9 +97,11 @@ This creates a table with 3 columns (username, password_digest, and salt). NOT N
 ### Testing 
 You can test the code running the module ```test_openairquality``` inside the test directory. The function tested is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
 To run the unittest go to the ```tests``` folder and do:
-```$ python3 -m unittest -v -b test_openairquality.py```
 ```
 $ python3 -m unittest -v -b test_openairquality.py
+```
+You will obtain this kind of result: 
+```
  test_empty_file (tests.test_main.TestCsvCreation) ... ok
  test_invalid_file (tests.test_main.TestCsvCreation) ... ok
  test_no_file (tests.test_main.TestCsvCreation) ... ok
