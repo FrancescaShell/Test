@@ -35,7 +35,8 @@ Successful log-in. Welcome username!
 
 You may want to turn on output verbosity use by typing: ```% python3 main.py  user -p password -c Roma -m pm10 -v ``` .  
 To get this kind of result:
-```Successful log-in. Welcome user!
+```
+Successful log-in. Welcome user!
 First level of verbosity turned on
 pm10 in Roma = 20.91304347826087 
 ```
