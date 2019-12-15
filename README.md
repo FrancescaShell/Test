@@ -33,7 +33,8 @@ Successful log-in. Welcome username!
 > **Note:** in case the user forgets to specify the molecule, the programm runs the default “pm10”. Indeed, pm10 are the most common polluting particles from 2.5 to 10 micrometers in diameter.
 
 
-You may want to turn on output verbosity use by typing: ```% python3 main.py  user -p password -c Roma -m pm10 -v ``` .  
+You may want to turn on output verbosity use by typing: 
+```% python3 main.py  user -p password -c Roma -m pm10 -v ``` 
 To get this kind of result:
 ```
 Successful log-in. Welcome user!
