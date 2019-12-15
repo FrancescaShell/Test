@@ -71,6 +71,15 @@ cursor.execute('''CREATE TABLE user_database
  
 This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR(30) conditions ensure that no user will register with Nan or more than 30 characters.
 
+*Optional arguments*:
+
+•	**-a**: add a username (password required).
+
+•	**-p**: username password (required).
+
+•	**-c**: check for a username and password (password required).
+
+
 
 ### Testing 
 You can test the code running the module ```test_openairquality``` inside the test directory. The function tested is the **list_csv** of the module ```openairquality.py``` inside pypackage folder.
