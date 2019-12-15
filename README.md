@@ -35,7 +35,7 @@ Successful log-in. Welcome username!
 
 You may want to turn on output verbosity use by typing: 
 ```
-% python3 main.py  user -p password -c Roma -m pm10 -v 
+% python main.py  user -p password -c Roma -m pm10 -v 
 ``` 
 To get this kind of result:
 ```
