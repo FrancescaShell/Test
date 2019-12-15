@@ -64,12 +64,12 @@ Before running ```main.py``` you need to register with a username and a password
 By importing and using the SQLite3 library, the program checks if the database is already existing, otherwise creates a new one called user_database by using: 
 ```
 cursor.execute('''CREATE TABLE user_database
-                     (username TEXT CHAR(30) NOT NULL, 
-                     password_digest TEXT CHAR(30) NOT NULL,
-                     salt TEST, PRIMARY KEY (username))''')
+                     (username CHAR(30) NOT NULL,
+                     password_digest CHAR(64) NOT NULL,
+                     salt CHAR(30), PRIMARY KEY (username))'''))
 ```
  
-This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR(30) conditions ensure that no user will register with Nan or more than 30 characters.
+This creates a table with 3 columns (username, password_digest, and salt). NOT NULL and CHAR() conditions ensure that users will not register with Nan or more characters not allowed.
 
 *Optional arguments*:
 
